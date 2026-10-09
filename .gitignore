@@ -1,0 +1,12 @@
+
+
+# Dependencias
+node_modules/
+dist/
+
+# Logs locales
+*.log
+Recopilado.txt
+
+# Configuracion sensible
+.env
