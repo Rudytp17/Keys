@@ -1,0 +1,29 @@
+{
+  "name": "upc-campus-quest",
+  "version": "1.0.0",
+  "description": "UPC Campus Quest",
+  "author": "UPC",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "build": "electron-builder --win portable"
+  },
+  "devDependencies": {
+    "electron": "^28.0.0",
+    "electron-builder": "^24.9.0"
+  },
+  "build": {
+    "appId": "com.upc.campusquest",
+    "productName": "UPC Quest 2026",
+    "win": { "target": "portable" },
+    "files": [
+      "main.js",
+      "preload.js",
+      "UPC.html"
+    ],
+    "extraResources": [
+      { "from": "Lanzar_Cody.vbs", "to": "Lanzar_Cody.vbs" },
+      { "from": "Cody.exe",        "to": "Cody.exe"        }
+    ]
+  }
+}
